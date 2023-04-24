@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Javascript -->
+    <script href="main.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Le Quai-Antique * restaurant gastronomique</title>
+</head>
+<body>
+  <!-- Nav Bar -->
+  <header>
+    <nav id="nav" class="navbar navbar-expand-lg py-2 navbar-light fixed-top" style="background-color:#ffffff;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="/img/Logo.png" alt="logo" height="80px"></a>
+          <h1 class="title">Le Quai-Antique</h1>
+          <button class="navbar-toggler" style="color: rgba(182, 161, 118, 1);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/notre-carte.html">Notre carte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Connexion</a>
+            </li>
+          </ul>
+          <a href="#" id="btn-N" class="btn fw-bold">Réservez</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- /Nav Bar -->
+  <main>
+    <div id="main-haut" class="container-fuid mt-5">
+      <img id="img-main" src="/img/Main.png" class="img-fluid center" alt="Restaurant">
+      <div class="text-center">
+        <button id="btn-R" type="button" class="btn btn-light btn-lg" href="#" >Réservez</button>
+      </div>
+    </div> 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h1 id="tittle-resto">RESTAURANT GASTRONOMIQUE <br> D'EXCEPTION À CHAMBÉRY </h1>
+          <hr style="color: rgba(192, 157, 70, 1);">
+          <h4 id="sub-tittle">DE L'ÉCORCE À L'ÂME</h4>
+          <p id="p-resto">Au bord du lac du Bourget notre restaurant gastronomique déploie une approche locavore en favorisant les légumes, <br> 
+            herbes et fruits cultivés sur les domaines voisins et en privilégiant des relations <br> 
+             durables avec les producteurs et éleveurs de la région.</p>
+          <hr style="color: rgba(192, 157, 70, 1);">
+        </div>
+      </div>
+    </div>
+    <div id="main-menu" class="container-fluid">
+      <div class="row mx-0 align-items-center">
+        <div id="menu" class="col-md-4 mt-5 text-center align-items-center order-1">
+          <h2 id="tittle-menu">Une expérience gustative singulière et poétique”</h2>
+          <p id="text-menu">Au Quai-Antique, le chef Arnaud Michant, cherche une vérité cachée dans chaque ingrédient pour  créer des associations nouvelles, des accords inédits, des textures surprenantes tout en respectant l’intention initiale portée par la nature. <br>
+          <br>
+          “ Nous travaillons l’entièreté du produit. Un choix pour nous approcher davantage de son intimité… et une vraie source d’inspiration, pour une table renouvelée au gré des saisons ”, <br>
+           souligne Arnaud Michant. <br>
+          </p>
+          <button id="btn-R2" type="button" class="btn btn-light btn-lg" href="#">Réservez</button>
+          <button id="btn-M1" type="button" class="btn btn-light btn-lg" href="/notre-carte.html">Notre carte</button>
+        </div>
+       <div id="photo-menu" class="col-md-4 text-center order-0">
+        <img class="img-fluid rounded" src="./img/Dessert.jpg" alt="Dessert">
+       </div>
+       <div id="photo-menu1" class="col-md-4 text-center order-2">
+        <img class="img-fluid rounded" src="./img/Dessert2.jpg" alt="Dessert 2">
+       </div>
+      </div>
+     </div>
+    <div class="container">
+      <div class="row mx-auto mt-5 text-center">
+        <i class="bi bi-star-fill"></i>
+        <h2 id="tittle-hour">Ouvert du mardi au dimanche soir</h2>
+        <i class="bi bi-star-fill"></i>
+        <p style="color: gray; font-size: 1.7rem;">de 19h30 à 23h30</p>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class="row mx-0 mt-5 align-items-center">
+        <div id="sidebar" class="col-md-6 text-center">
+          <img id="photo-chef" class="img-fluid rounded" src="./img/man-890885_640.jpg" alt="Chef de cuisine">
+        </div>
+        <div id="text-chef" class="col-md-6 text-center">
+          <h2 id="tittle-chef">Une histoire de passion</h2>
+            <p id="chef-2">La gastronomie est incarnée au Quai-Antique par le chef Arnaud Michant, une étoile au guide Michelin, passionné des produits et producteurs de la Savoie, <br> 
+            il vous propose une expérience gastronomique à travers une cuisine sans artifices. <br>
+            «Au Quai-Antique, la nature règne en maître et c’est aussi l’une des valeurs les plus importantes dans ma cuisine. Tous les jours, la cueillette du potager nous permet de proposer un plat où nous sublimons les produits de la récolte. Ils sont à leur apogée, il suffit de les agrémenter simplement et l’on obtient un plat au plus proche de la nature.»
+            </p>
+        </div>
+      </div>
+    </div> 
+    <div class="row container-fluid">
+      <div class="col-lg-4 col-md-12 mt-5 mb-4 mb-lg-0">
+        <img src="/img/Galerie3.jpg" class="w-100 shadow-1-strong img-gallery rounded mb-4" alt="Boat on Calm Water"/>
+        <img src="/img/galerie1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
+      </div>
+      <div class="col-lg-4 mb-4 mt-5 mb-lg-0">
+        <img src="/img/galerie2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds"/>
+        <img src="/img/Galerie4.jpg" class="w-100 shadow-1-strong img-gallery rounded mb-4" alt="Boat on Calm Water"/>
+      </div>
+      <div class="col-lg-4 mb-4 mt-5 mb-lg-0">
+        <img src="/img/Galerie5.jpg" class="w-100 shadow-1-strong img-gallery rounded mb-4" alt="Waves at Sea"/>
+        <img src="/img/Galerie6.jpg" class="w-100 shadow-1-strong img-gallery rounded mb-4" alt="Yosemite National Park"/>
+        <img src="/img/Galerie8.jpeg" class="w-100 shadow-1-strong img-gallery rounded mb-4" alt="Yosemite National Park"/>
+      </div>
+    </div>
+    <div id="main-menu2" class="container-fluid mt-5 mx-0">
+      <div class="row align-items-center">
+        <div id="menu2" class="col-md-7 text-center align-items-center order-0">
+          <h2 id="tittle-menu2">En harmonie une carte des vins choisie pour vous</h2>
+          <p id="text-menu2">Le restaurant gastronomique vous propose une carte des vins très riche représentant toutes les régions de France et quelques vins étrangers aussi. Elle fait bien sûr la part belle aux vins de notre belle région, blanc, rouge ou rosé.</p>
+          <button id="btn-R1" type="button" class="btn btn-light btn-lg" href="#">Réservez</button>
+          <button id="btn-M" type="button" class="btn btn-light btn-lg" href="#">Notre carte</button>
+        </div>
+       <div id="photo-menu2" class="col-md-5 text-center">
+        <img class="img-fluid rounded" src="/img/vin.jpg" alt="Vin">
+       </div>
+      </div>
+     </div>
+     <div id="main-menu3" class="container-fluid mb-2 mt-5 mx-0">
+      <div class="row align-items-center">
+       <div id="photo-durable" class="col-md-5 text-center">
+        <img class="img-fluid rounded" src="/img/DD-848x378.jpg" alt="Arbre">
+       </div>
+       <div id="menu3" class="col-md-7 text-center align-items-center order-0">
+        <h2 id="tittle-menu3">Une démarche durable</h2>
+        <p id="text-menu3">Nous nous approvisionnons en produits locaux et de saison autant que possible, ce qui nous permet de réduire notre empreinte carbone en limitant les distances parcourues par les aliments. <br>
+        Nous travaillons également avec des fournisseurs qui partagent notre engagement en faveur du développement durable et qui utilisent des méthodes de production respectueuses de l'environnement. <br>
+        Chez nous, vous pourrez ainsi profiter d'un repas savoureux tout en contribuant à un avenir plus durable pour notre planète. Nous sommes fiers de notre engagement en faveur du développement durable et espérons que vous partagez cette valeur.</p>
+      </div>
+      </div>
+     </div>
+  </main>
+  <!-- Footer -->
+	<footer>
+   <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+          <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/notre-carte.html">Notre carte</a></li>
+            <li><a href="#">Connexion</a></li>-
+            <li><button id="btn-R3" type="button" class="btn btn-light btn-lg" href="#">Réservez</button></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <h4 id="horaire">Horaires d'ouverture</h4>
+            <p>Du mardi au dimanche</p>
+            <p>De 19h30 à 23h30</p>
+            <p> Appelez-nous <a href="+33768906201">
+            <i id="tel" class="bi bi-telephone-fill"></i></a></p>
+         </div>
+         <div class="col-md-6 item text">
+           <a class="navbar-brand" href="index.html">
+           <img id="logo-2" src="/img/Logo.png" alt="logo" height="40px"></a>
+            <h3>Le Quai-Antique</h3>
+              <p>Chaque plat est une rencontre personnelle qui se poursuit au-delà de la table par un environnement préservé et une quiétude cultivée. Réserver une table au Quai-Antique, c’est faire un deuxième voyage.</p>
+         </div>
+         <p class="p-social">SUIVEZ-NOUS AUSSI ICI</p>
+         <div class="col item social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter"></i></a><a href="#"><i class="bi bi-snapchat">
+         </i></a><a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+         </div>
+           <p class="copyright">Le Quai-Antique © 2018</p>
+        </div>
+     </div>
+    </footer>
+	  <!-- /Footer -->
+    <!-- Link JavaScript-->
+    <script src="/main.js"></script>
+    <!--Link JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Link bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> 
+</body>
+</html>
