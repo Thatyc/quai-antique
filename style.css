@@ -17,7 +17,7 @@ p {
 }
 
 nav .navbar-nav li a{
-  color: rgb(128, 128, 128);
+  color: rgb(99, 98, 98);
   font-size: 1.5rem;
 }
 
@@ -87,13 +87,12 @@ nav .navbar-nav li a:hover {
 
 #sub-tittle {
   text-align: center;
-  color: rgb(128, 128, 128);
-  font-weight: bold;
+  color: rgb(99, 98, 98);
 }
 
 #p-resto {
   text-align: center;
-  color: rgb(128, 128, 128);
+  color: rgb(99, 98, 98);
 }
 
 #tittle-chef,
@@ -105,7 +104,7 @@ nav .navbar-nav li a:hover {
 #text-menu2,
 #text-menu3,
 #tittle-hour {
-  color: rgb(128, 128, 128);
+  color: rgb(99, 98, 98);
 }
 
 #photo-chef {
@@ -138,7 +137,7 @@ footer {
 .footer {
   padding: 50px 0;
   color:rgb(255, 249, 249);
-  background-color: rgb(140, 138, 131);
+  background-color: rgb(99, 98, 98);
 }
 
 .footer h3 {
