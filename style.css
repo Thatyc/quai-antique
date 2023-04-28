@@ -16,7 +16,7 @@ p {
 
 nav .navbar-nav li a{
   color: rgb(99, 98, 98);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 nav .navbar-nav li a:hover {
@@ -34,7 +34,8 @@ nav .navbar-nav li a:hover {
 #btn-R,
 #btn-R1,
 #btn-R2,
-#btn-R3 {
+#btn-R3,
+#btn-connexion {
   background-color: rgba(182, 161, 118, 1); 
   color: rgb(255, 255, 255);
   border: 3px solid rgba(182, 161, 118, 1);
@@ -46,7 +47,8 @@ nav .navbar-nav li a:hover {
 }
 
 #btn-M,
-#btn-M1 {
+#btn-M1,
+#btn-compte {
   background-color: rgb(255, 255, 255);
   color: rgba(182, 161, 118, 1);
   border: 3px solid rgba(182, 161, 118, 1);
@@ -107,24 +109,51 @@ nav .navbar-nav li a:hover {
   width: 500px;
 }
 
-@media screen and (max-width: 795px) {
+@media screen and (max-width: 992px) {
   #photo-menu2 {
     order: -1;
   }
 }
-
+/*
 .img-gallery:hover {
   transform: scale(1.3);
-  opacity: 0.7;
-}
+  opacity: 0.9;
+} 
+
+@media screen and (max-width: 992px) {
+  .img-gallery:hover {
+    transform: none;
+  }
+} */
 
 .img-show{
   border: 2px solid rgba(182, 161, 118, 1);
-}
+} 
+
 /* Notre carte */
 #carte-main {
   width: 100%;
 }
+
+/* Page connexion */
+
+.form {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#h-connexion {
+  color: rgb(99, 98, 98);
+  text-align: center;
+}
+
+.form-border {
+  border: 2px solid rgba(182, 161, 118, 1);
+  padding: 10px;
+}
+
 
 /* Footer */
 footer {
@@ -210,4 +239,9 @@ footer {
 	color: rgba(182, 161, 118, 1);
 	background: transparent;
 }
+
+.bi-github {
+  color: rgba(182, 161, 118, 1);
+}
+
 
