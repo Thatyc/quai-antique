@@ -49,32 +49,32 @@
   </header>
   <!-- /Nav Bar -->
   <main>
-    <div class="container-fluid form">
-		 <div class="col-md-6">
-			<h1 id="h-connexion">Se connecter</h1>
-			 <form class="form-border rounded">
-				<div class="form-group">
-					<label for="email">Adresse email :</label>
-					<input type="email" class="form-control" id="email" required>
-				</div>
-				<div class="form-group">
-					<label for="password">Mot de passe :</label>
-					<input type="password" class="form-control" id="password" required>
-				</div>
-        <br>
-				<button id="btn-connexion" type="submit" class="btn">Se connecter</button>
-        <button onclick="openPopup()" id="btn-compte" type="submit" class="btn">Créer un compte</button>
-			 </form>
-		 </div>
-	 </div>
-    
-
-
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h2 class="text-center text-dark mt-5">Réservez votre table</h2>
+          <div class="card mt-5 my-5">
+            <form class="card-body cardbody-color p-lg-5">
+              <div class="text-center">
+                <img src="/img/Logo.png" class="img-fluid img-thumbnail rounded-circle my-3"
+                  width="100px" alt="profile">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="Username" aria-describedby="emailHelp"
+                  placeholder="Nom d'utilisateur">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+              </div>
+              <div class="text-center"><button id="btn-connexion" type="submit" class="btn px-5 mb-5 w-100">Login</button></div>
+              <div id="emailHelp" class="form-text text-center mb-5 text-dark">Pas encore de compte ?<a href="#" onclick="openPopup()" class="text-dark fw-bold"> Créez un compte</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-
-
-
-
 <!-- Footer -->
 <footer>
     <div class="footer">

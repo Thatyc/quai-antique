@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="style.css">
+   
     <!-- Link Javascript -->
     <script href="main.js"></script>
     <!-- Google fonts -->
@@ -17,6 +16,8 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
     <title>Le Quai-Antique * restaurant gastronomique</title>
 </head>
 <body>
@@ -48,58 +49,49 @@
     </nav>
   </header>
   <!-- /Nav Bar -->
-
-
-	 <h1>Réservation de table</h1>
-
-	 <?php 
-
-	 if(isset($_POST['submit'])) {
-		$nom = $_POST['nom'];
-		$email = $_POST['email'];
-		$date = $_POST['date'];
-		$heure = $_POST['heure'];
-		$nb_personnes = $_POST['nb_personnes'];
-
-		// Connexion à la base de données
-		$conn = mysqli_connect("localhost", "nom_utilisateur", "mot_de_passe", "nom_base_de_données");
-
-		// Vérification de la connexion
-		if (!$conn) {
-		    die("Connection failed: " . mysqli_connect_error());
-		}
-
-		// Insertion des données dans la table "reservations"
-		$sql = "INSERT INTO reservations (nom, email, date, heure, nb_personnes) VALUES ('$nom', '$email', '$date', '$heure', '$nb_personnes')";
-		if (mysqli_query($conn, $sql)) {
-		    echo "Réservation effectuée avec succès.";
-		} else {
-		    echo "Erreur: " . $sql . "<br>" . mysqli_error($conn);
-		}
-
-		mysqli_close($conn);
-	}
-	?>
-
-	<form method="post" action="">
-		<label for="nom">Nom :</label>
-		<input type="text" name="nom" id="nom" required><br><br>
-
-		<label for="email">Email :</label>
-		<input type="email" name="email" id="email" required><br><br>
-
-		<label for="date">Date :</label>
-		 <input type="date" name="date" id="date" required><br><br>
-
-		 <label for="heure">Heure :</label>
-		 <input type="time" name="heure" id="heure" required><br><br>
-
-		 <label for="nb_personnes">Nombre de personnes :</label>
-		 <input type="number" name="nb_personnes" id="nb_personnes" min="1" max="10" required><br><br>
-
-		 <input type="submit" name="submit" value="Réserver">
-	</form>
-
+  <main>
+   <div class="container-fuid">
+     <img id="carte-main" src="/img/chefs.png" class="img-fluid" alt="Restaurant">
+     <div class="container">
+      <div class="row">
+        <div class="col-md-7 offset-md-3">
+          <h2 class="text-center mt-3">Réservez votre table</h2>
+          <div class="card my-3">
+            <form class="card-body cardbody-color p-lg-5">
+              <div class="mb-2">
+                  <label class="fw-bold" for="nom">Votre nom</label>
+                  <input type="text" class="form-control" id="nom" placeholder="Saissisez votre nom">
+              </div>
+              <div class="mb-2">
+                <label class="fw-bold" for="email">Votre mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Saissisez votre mail">
+              </div><br>
+              <div class="mb-2">
+                <label class="fw-bold" for="phone">Votre numéro de téléphone</label>
+                <input type="phone" class="form-control" id="fone" placeholder="Saissisez votre numéro de téléphone">
+              </div><br>
+              <div class="mb-2">
+                <label class="fw-bold" for="date">Date</label><br>
+		            <input type="date" name="date" id="date" required>
+              </div>
+              <div class="mb-2">
+                <label class="fw-bold" for="heure">Choisissez l'heure de la réservation</label><br>
+                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="19:30_submit">19:30</button>
+                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="20:00_submit">20:00</button>
+                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="20:30_submit">20:30</button>
+                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="21:00_submit">21:00</button>
+                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="21:30_submit">21:30</button>
+                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="22:00_submit">22:00</button>
+                <button class="btn btn-ls text-center btn-primary m-2" name="submit" type="submit" value="22:30_submit">22:30</button>
+              </div>
+              <div class="text-center"><button id="btn-reserve" type="submit" class="btn px-4 mb-5 w-25">Réserver</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+ </main>
   <!-- Footer -->
 	<footer>
     <div class="footer">
