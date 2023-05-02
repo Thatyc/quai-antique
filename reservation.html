@@ -50,14 +50,12 @@
   </header>
   <!-- /Nav Bar -->
   <main>
-   <div class="container-fuid">
-     <img id="carte-main" src="/img/chefs.png" class="img-fluid" alt="Restaurant">
-     <div class="container">
+    <div id="main-reserve" class="container">
       <div class="row">
         <div class="col-md-7 offset-md-3">
-          <h2 class="text-center mt-3">Réservez votre table</h2>
-          <div class="card my-3">
-            <form class="card-body cardbody-color p-lg-5">
+          <div class="card cardbody-color mt-5 my-3">
+            <form class="card-body  mt-5 p-lg-5">
+              <h2 class="text-center mt-0">Réservez votre table</h2>
               <div class="mb-2">
                   <label class="fw-bold" for="nom">Votre nom</label>
                   <input type="text" class="form-control" id="nom" placeholder="Saissisez votre nom">
@@ -65,26 +63,26 @@
               <div class="mb-2">
                 <label class="fw-bold" for="email">Votre mail</label>
                 <input type="email" class="form-control" id="email" placeholder="Saissisez votre mail">
-              </div><br>
-              <div class="mb-2">
+              </div>
+              <div class="mb-1">
                 <label class="fw-bold" for="phone">Votre numéro de téléphone</label>
                 <input type="phone" class="form-control" id="fone" placeholder="Saissisez votre numéro de téléphone">
-              </div><br>
+              </div>
               <div class="mb-2">
                 <label class="fw-bold" for="date">Date</label><br>
 		            <input type="date" name="date" id="date" required>
               </div>
-              <div class="mb-2">
+              <div class="mb-0">
                 <label class="fw-bold" for="heure">Choisissez l'heure de la réservation</label><br>
-                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="19:30_submit">19:30</button>
-                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="20:00_submit">20:00</button>
-                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="20:30_submit">20:30</button>
-                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="21:00_submit">21:00</button>
-                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="21:30_submit">21:30</button>
-                <button class="btn btn-ls btn-primary m-2" name="submit" type="submit" value="22:00_submit">22:00</button>
-                <button class="btn btn-ls text-center btn-primary m-2" name="submit" type="submit" value="22:30_submit">22:30</button>
-              </div>
-              <div class="text-center"><button id="btn-reserve" type="submit" class="btn px-4 mb-5 w-25">Réserver</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="19:30_submit">19:30</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="20:00_submit">20:00</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="20:30_submit">20:30</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="21:00_submit">21:00</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="21:30_submit">21:30</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="22:00_submit">22:00</button>
+                <button class="btn btn-ls text-center btn-heure m-2" name="submit" type="submit" value="22:30_submit">22:30</button>
+              </div><br>
+              <div class="text-center"><button type="submit" class="btn btn-gold px-4 mb-5 w-25">Réserver</button>
               </div>
             </form>
           </div>
