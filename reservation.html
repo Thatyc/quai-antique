@@ -54,7 +54,7 @@
       <div class="row">
         <div class="col-md-7 offset-md-3">
           <div class="card cardbody-color mt-5 my-3">
-            <form class="card-body  mt-5 p-lg-5">
+            <form action="traitement_formulaire.php" method="post" class="card-body  mt-5 p-lg-5">
               <h2 class="text-center mt-0">Réservez votre table</h2>
               <div class="mb-2">
                   <label class="fw-bold" for="nom">Votre nom</label>
@@ -68,19 +68,23 @@
                 <label class="fw-bold" for="phone">Votre numéro de téléphone</label>
                 <input type="phone" class="form-control" id="fone" placeholder="Saissisez votre numéro de téléphone">
               </div>
+              <div class="mb-1">
+                <label class="fw-bold" for="phone">Avez-vous des allergies ?</label>
+                <input type="text" class="form-control" id="allergies" placeholder="Saissisez les allergies">
+              </div>
               <div class="mb-2">
                 <label class="fw-bold" for="date">Date</label><br>
 		            <input type="date" name="date" id="date" required>
               </div>
               <div class="mb-0">
                 <label class="fw-bold" for="heure">Choisissez l'heure de la réservation</label><br>
-                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="19:30_submit">19:30</button>
-                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="20:00_submit">20:00</button>
-                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="20:30_submit">20:30</button>
-                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="21:00_submit">21:00</button>
-                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="21:30_submit">21:30</button>
-                <button class="btn btn-ls btn-heure m-2" name="submit" type="submit" value="22:00_submit">22:00</button>
-                <button class="btn btn-ls text-center btn-heure m-2" name="submit" type="submit" value="22:30_submit">22:30</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="button" value="19:30_submit">19:30</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="button" value="20:00_submit">20:00</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="button" value="20:30_submit">20:30</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="button" value="21:00_submit">21:00</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="button" value="21:30_submit">21:30</button>
+                <button class="btn btn-ls btn-heure m-2" name="submit" type="button" value="22:00_submit">22:00</button>
+                <button class="btn btn-ls text-center btn-heure m-2" name="submit" type="button" value="22:30_submit">22:30</button>
               </div><br>
               <div class="text-center"><button type="submit" class="btn btn-gold px-4 mb-5">Réserver</button>
               </div>
@@ -100,7 +104,7 @@
              <li><a href="/index.html">Accueil</a></li>
              <li><a href="/notre-carte.html">Notre carte</a></li>
              <li><a href="/connexion.html">Connexion</a></li>
-             <li><button id="btn-R3" type="button" class="btn btn-light btn-lg" href="/reservation.html">Réservez</button></li>
+             <li><a href="/reservation.html" id="btn-R3" type="button" class="btn btn-light btn-lg" >Réservez</a></li>
            </ul>
          </div>
          <div class="col-sm-6 col-md-3">
@@ -131,7 +135,7 @@
   </footer>
   <!-- /Footer -->
   <!-- Link JavaScript-->
-  <script src="/main.js" defer></script>
+  <script src="/main.js"></script>
   <!--Link JQuery-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <!-- Link bootstrap -->

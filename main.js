@@ -1,22 +1,20 @@
-function openPopup() {
-    // Affiche la fenêtre modale
-    // ...
-}
+ // PAGE RESERVATION
+ // Récupérer tous les boutons d'heure
+ const heureButtons = document.querySelectorAll('.btn-heure');
 
-// Récupère la fenêtre modale
-var modal = document.getElementById("myModal");
+ // Ajouter un gestionnaire d'événement clic à chaque bouton d'heure
+ heureButtons.forEach(button => {
+   button.addEventListener('click', () => {
+     // Récupérer l'heure sélectionnée depuis la valeur du bouton
+     const heureSelectionnee = button.value.split('_')[0];
 
-// Récupère le bouton de fermeture de la fenêtre modale
-var span = document.getElementsByClassName("close")[0];
-
-// Ferme la fenêtre modale lorsqu'on clique sur le bouton de fermeture
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Ferme la fenêtre modale lorsqu'on clique en dehors de la fenêtre
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+     // Faire quelque chose avec l'heure sélectionnée
+     console.log('Heure sélectionnée :', heureSelectionnee);
+     
+     // Ajouter une classe active pour mettre en évidence le bouton sélectionné
+     heureButtons.forEach(btn => {
+       btn.classList.remove('active');
+     });
+     button.classList.add('active');
+   });
+ });

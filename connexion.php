@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Vérifier si les informations d'identification sont correctes
-    $stmt = $conn->prepare("SELECT * FROM utilisateurs WHERE username = :username AND password = :password");
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username AND password = :password");
     $stmt->bindParam(':username', $username);
     $stmt->bindParam(':password', $password);
     $stmt->execute();
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result !== false) { // Si les informations d'identification sont correctes
       $_SESSION['username'] = $username;
-      header("Location: index.html");
+      header("index.html");
       exit();
     } else { // Si les informations d'identification sont incorrectes
       $error_message = "Nom d'utilisateur ou mot de passe incorrect";
