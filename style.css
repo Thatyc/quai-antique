@@ -179,10 +179,17 @@ a{
 /* Réservation */
 
 #main-reserve {
-  margin-top: 5rem;
+  margin-top: 5em;
 }
 
+.panel {
+  width: 200px;
+  padding: 10px;
+  color: rgba(182, 161, 118, 1);
+  
+}
 /* Footer */
+
 footer {
   border: 5px solid rgba(182, 161, 118, 1);
 }
